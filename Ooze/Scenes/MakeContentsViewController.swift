@@ -146,7 +146,7 @@ class MakeContentsViewController: UIViewController, UIImagePickerControllerDeleg
         let fileName = "movie.MOV"
         
         let storageRef = storage.reference()
-        let movieRef = storageRef.child("movie")
+        let movieRef = storageRef.child("users").child("movie")
         let fileRef = movieRef.child(fileName)
         let uploadTask = fileRef.putFile(from: videoURL, metadata: nil) { metadata, error in
             guard let metadata = metadata else {

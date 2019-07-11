@@ -13,7 +13,7 @@ final class MovieDetailCoordinator: Coordinator {
     private let navigator: UINavigationController
 
     private var movieDetailViewController: MovieDetailViewController?
-    
+    var projectDetailCoordinator: ProjectDetailCoordinator?
     init(navigator: UINavigationController) {
         self.navigator = navigator
       
@@ -28,3 +28,11 @@ final class MovieDetailCoordinator: Coordinator {
      
     }
 }
+
+//extension MovieDetailCoordinator: MovieDetailViewControllerDelegate {
+//    func goToProjectDetail() {
+//        let projectDetailCoordinator = ProjectDetailCoordinator(navigator: self.navigator)
+//        projectDetailCoordinator.start()
+//        self.projectDetailCoordinator = projectDetailCoordinator
+//    }
+//}

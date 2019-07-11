@@ -53,25 +53,7 @@ final class MovieListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        
-//        let storage = Storage.storage()
-//        let storageReference = storage.reference()
-//        let movieListReference = storage.reference(withPath: "movie")
-//        let pathReference = storage.reference(withPath: "movie/movie.MOV")
-//
-//        let movieReference = pathReference.child("movie/movie.MOV")
-//
-//        let localURL = URL(string: "path/to/movie")!
-//
-//        let downloadTask =  movieReference.write(toFile: localURL)  { url, error in
-//            if let error = error {
-//                print("error")
-//
-//            }else {
-//                print("成功")
-//            }
-//        }
-//
+
         tableView.register(UINib(nibName: "MovieListTableViewCell", bundle: nil), forCellReuseIdentifier: "movieListCell")
         title = "ホーム"
         view.backgroundColor = .clear
@@ -83,13 +65,9 @@ final class MovieListViewController: UIViewController {
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
-        tableView.rowHeight = 195
+        tableView.rowHeight = 200
         
-        
-        
-        
-  
-        
+    
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

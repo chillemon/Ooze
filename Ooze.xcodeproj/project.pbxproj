@@ -57,6 +57,9 @@
 		52F9028922901A9000E81280 /* OverCurrentTransitioningInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9028822901A9000E81280 /* OverCurrentTransitioningInteractor.swift */; };
 		52F9028B22913FF600E81280 /* OverCurrentTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9028A22913FF600E81280 /* OverCurrentTransitionable.swift */; };
 		52F9028D229156E000E81280 /* SemiModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9028C229156E000E81280 /* SemiModalViewController.swift */; };
+		52F9BBD522D6301700C2DBB9 /* ProjectDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9BBD422D6301700C2DBB9 /* ProjectDetailCoordinator.swift */; };
+		52F9BBD722D6303A00C2DBB9 /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9BBD622D6303A00C2DBB9 /* ProjectDetailViewController.swift */; };
+		52F9BBD922D7BC0F00C2DBB9 /* BlackScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9BBD822D7BC0F00C2DBB9 /* BlackScreenView.swift */; };
 		52F9BC6E22AF8BDF00308A10 /* Settlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9BC6D22AF8BDF00308A10 /* Settlement.swift */; };
 		52F9BC7022AF8DD800308A10 /* StripeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9BC6F22AF8DD800308A10 /* StripeProvider.swift */; };
 		52FB1E8522C09D0200AB4C94 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FB1E8422C09D0100AB4C94 /* WelcomeViewController.swift */; };
@@ -147,6 +150,9 @@
 		52F9028822901A9000E81280 /* OverCurrentTransitioningInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverCurrentTransitioningInteractor.swift; sourceTree = "<group>"; };
 		52F9028A22913FF600E81280 /* OverCurrentTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverCurrentTransitionable.swift; sourceTree = "<group>"; };
 		52F9028C229156E000E81280 /* SemiModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemiModalViewController.swift; sourceTree = "<group>"; };
+		52F9BBD422D6301700C2DBB9 /* ProjectDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailCoordinator.swift; sourceTree = "<group>"; };
+		52F9BBD622D6303A00C2DBB9 /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
+		52F9BBD822D7BC0F00C2DBB9 /* BlackScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackScreenView.swift; sourceTree = "<group>"; };
 		52F9BC6D22AF8BDF00308A10 /* Settlement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settlement.swift; sourceTree = "<group>"; };
 		52F9BC6F22AF8DD800308A10 /* StripeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeProvider.swift; sourceTree = "<group>"; };
 		52FB1E8422C09D0100AB4C94 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -277,6 +283,8 @@
 				528235E12272F7D20014833E /* MovieListTableViewCell.xib */,
 				528235D42272DC330014833E /* MovieListViewController.swift */,
 				528235DC2272EBCC0014833E /* MovieDetailViewController.swift */,
+				52F9BBD822D7BC0F00C2DBB9 /* BlackScreenView.swift */,
+				52F9BBD622D6303A00C2DBB9 /* ProjectDetailViewController.swift */,
 				5206689E22CC8013002CCFB9 /* AVPlayerView.swift */,
 				52F9BC6D22AF8BDF00308A10 /* Settlement.swift */,
 				52F9BC6F22AF8DD800308A10 /* StripeProvider.swift */,
@@ -319,6 +327,7 @@
 				528235EF227442C90014833E /* ProfileCoordinator.swift */,
 				528235DE2272F3E30014833E /* MovieListCoordinator.swift */,
 				528235DA2272EB250014833E /* MovieDetailCoordinator.swift */,
+				52F9BBD422D6301700C2DBB9 /* ProjectDetailCoordinator.swift */,
 				52FB1E8622C0AEF000AB4C94 /* WelcomeCoordinator.swift */,
 				52FB1E8822C0C85000AB4C94 /* SignInCoordinator.swift */,
 				52FD28B3227A98D200DFF479 /* MainTabBarCoordinator.swift */,
@@ -632,6 +641,7 @@
 				52485A5422A34D9000C72373 /* SelfIntroductionTableViewCell.swift in Sources */,
 				528235EE2274421E0014833E /* ProfileModel.swift in Sources */,
 				52F90283228EA63A00E81280 /* SetTitleViewController.swift in Sources */,
+				52F9BBD722D6303A00C2DBB9 /* ProjectDetailViewController.swift in Sources */,
 				528235DF2272F3E30014833E /* MovieListCoordinator.swift in Sources */,
 				52F9BC6E22AF8BDF00308A10 /* Settlement.swift in Sources */,
 				52485A5822A6752F00C72373 /* ProfileImageTableViewCell.swift in Sources */,
@@ -644,6 +654,7 @@
 				52409566229E78B1006E50C1 /* SignInViewController.swift in Sources */,
 				5282359D22719AAB0014833E /* ViewController.swift in Sources */,
 				52C9FF2E22967807003CAC35 /* CustomFloatingPanelLayout.swift in Sources */,
+				52F9BBD922D7BC0F00C2DBB9 /* BlackScreenView.swift in Sources */,
 				52F9028922901A9000E81280 /* OverCurrentTransitioningInteractor.swift in Sources */,
 				52485A5022A29CF500C72373 /* TextFieldTableViewCell.swift in Sources */,
 				52409568229F07C0006E50C1 /* PasswordResetViewController.swift in Sources */,
@@ -651,6 +662,7 @@
 				52F90287229013FB00E81280 /* DismissAnimator.swift in Sources */,
 				52F9028522900F6600E81280 /* ModalPresentationController.swift in Sources */,
 				528235CF227213780014833E /* AppCoordinator.swift in Sources */,
+				52F9BBD522D6301700C2DBB9 /* ProjectDetailCoordinator.swift in Sources */,
 				528235D52272DC330014833E /* MovieListViewController.swift in Sources */,
 				52FB1E8522C09D0200AB4C94 /* WelcomeViewController.swift in Sources */,
 				52FD28B4227A98D200DFF479 /* MainTabBarCoordinator.swift in Sources */,
