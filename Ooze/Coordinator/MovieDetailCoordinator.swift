@@ -29,10 +29,10 @@ final class MovieDetailCoordinator: Coordinator {
     }
 }
 
-//extension MovieDetailCoordinator: MovieDetailViewControllerDelegate {
-//    func goToProjectDetail() {
-//        let projectDetailCoordinator = ProjectDetailCoordinator(navigator: self.navigator)
-//        projectDetailCoordinator.start()
-//        self.projectDetailCoordinator = projectDetailCoordinator
-//    }
-//}
+extension MovieDetailCoordinator: MovieDetailViewControllerDelegate {
+    func goToProjectDetail() {
+        let projectDetailCoordinator = ProjectDetailCoordinator(navigator: self.navigator)
+        projectDetailCoordinator.start()
+        self.projectDetailCoordinator = projectDetailCoordinator
+    }
+}

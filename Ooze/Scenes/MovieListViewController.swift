@@ -16,8 +16,10 @@ protocol MovieListViewControllerDelegate: AnyObject {
 }
 
 final class MovieListViewController: UIViewController {
+    
     weak var delegate: MovieListViewControllerDelegate?
    
+    let db = Firestore.firestore()
     let movieListCell = MovieListTableViewCell()
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
@@ -29,6 +31,10 @@ final class MovieListViewController: UIViewController {
         tableView.registerNib(cell: MovieListTableViewCell.self)
         return tableView
     }()
+    
+    
+    private var messageListener: ListenerRegistration?
+    
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -44,6 +50,8 @@ final class MovieListViewController: UIViewController {
         //ユーザーの投稿内容をFirebaseからとって表示
         
     ]
+    
+    var postsList:[String: Any]!
     
     // キャッシュ
     private var cellHeightList: [IndexPath: CGFloat] = [:]
@@ -67,7 +75,33 @@ final class MovieListViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
         tableView.rowHeight = 200
         
+        
+        
     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        for (key, value) in postsList {
+            print("\(key) -> \(value)")
+        }
+        guard let user = Auth.auth().currentUser else {
+            // サインインしていない場合の処理をするなど
+            return
+        }
+        
+        db.collection("posts").getDocuments() {(querySnapshot, err) in
+            if let error = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    self.postsList = document.data()
+                }
+            }
+        }
+        
+        
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -93,17 +127,16 @@ extension MovieListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return movieList.count
-        return 30
+        return postsList?.count ?? 30
+        
     }
     
    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(cell: MovieListTableViewCell.self, for: indexPath)
-        
-
-//        cell.set[model: model]
-        return cell
+      
+         return cell
     }
 }
 

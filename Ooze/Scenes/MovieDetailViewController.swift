@@ -15,13 +15,13 @@ import AVFoundation
 import CoreMedia
 //import Stripe
 
-//protocol MovieDetailViewControllerDelegate: AnyObject {
-//    func goToProjectDetail()
-//}
+protocol MovieDetailViewControllerDelegate: AnyObject {
+    func goToProjectDetail()
+}
 
 class MovieDetailViewController: UIViewController   {
   
-//    weak var delegate:  MovieDetailViewControllerDelegate?
+    weak var delegate:  MovieDetailViewControllerDelegate?
     
     var movieURL: URL?
     // 再生用のアイテム.
@@ -88,14 +88,14 @@ class MovieDetailViewController: UIViewController   {
     }
     
     @objc func endOfMovie(_ sender: NotificationCenter) {
-//        delegate?.goToProjectDetail()
+        delegate?.goToProjectDetail()
         let projectDetailViewController = ProjectDetailViewController()
-        self.navigationController?.present(projectDetailViewController, animated: true)
+        self.navigationController?.pushViewController(projectDetailViewController, animated: true)
         
         
     }
     @objc func didTakeScreenshot(notification: Notification) {
-        // 何かする
+        // スクリーンショット後に何かするところ
         print("こら！スクショするな！")
     }
         

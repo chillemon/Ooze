@@ -141,8 +141,14 @@ class MakeContentsViewController: UIViewController, UIImagePickerControllerDeleg
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let user = Auth.auth().currentUser else {
+            // サインインしていない場合の処理をするなど
+            return
+        }
+        let db = Firestore.firestore()
+        let ref = db.collection("posts")
         guard let videoURL = info[UIImagePickerController.InfoKey.mediaURL] as? URL else { return }
-        
+//        ref.addDocument(data: ["movieURL":videoURL])
         let fileName = "movie.MOV"
         
         let storageRef = storage.reference()
@@ -155,7 +161,7 @@ class MakeContentsViewController: UIViewController, UIImagePickerControllerDeleg
                 return
             }
             print("成功")
-    
+            
         }
                 imagePickerController.dismiss(animated: true, completion: nil)
     }

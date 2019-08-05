@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class ThanksMessageViewController: UIViewController {
     
+    
+    let db = Firestore.firestore()
+    
+    var thanksTextView: UITextView!
     // e-sRGBA; red: 赤, green: 緑, blue: 青, a: 透明度
     let srgba = UIColor(displayP3Red: 0.4, green: 0.5, blue: 0.8, alpha:1.0)
     
-    var postDismissionAction: (() -> Void)?
+    var thanksMessage: ((String) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +30,7 @@ class ThanksMessageViewController: UIViewController {
         
         
         //ナビゲーションアイテムのタイトルを設定
-        let navItem : UINavigationItem = UINavigationItem(title: "お礼のメッセ")
+        let navItem : UINavigationItem = UINavigationItem(title: "お礼の言葉")
         
         //ナビゲーションバー右のボタンを設定
         navItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPushed(_:)))
@@ -43,21 +48,11 @@ class ThanksMessageViewController: UIViewController {
        
     }
     
-    // addBtnをタップしたときのアクション
-    @objc func doneButtonPushed(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
-        self.postDismissionAction?()
-        
-    }
-    
-    @objc func cancelAction(_ sender: UIBarButtonItem) {
-         self.dismiss(animated: true, completion: nil)
-        
-    }
     func setupThanksTextView() {
-        let thanksTextView = UITextView()
+        thanksTextView = UITextView()
         thanksTextView.frame = CGRect(x: 0, y: UIApplication.shared.statusBarFrame.height + 100, width: self.view.frame.width, height: 200)
-       
+        thanksTextView.text = "支援してくださりありがとうございます"
+        
         thanksTextView.layer.borderWidth = 0.5
         thanksTextView.layer.borderColor = srgba.cgColor
         thanksTextView.keyboardType = .default
@@ -65,7 +60,28 @@ class ThanksMessageViewController: UIViewController {
         self.view.addSubview(thanksTextView)
     }
     
-
     
+    
+    // addBtnをタップしたときのアクション
+    @objc func doneButtonPushed(_ sender: UIBarButtonItem) {
+        guard let user = Auth.auth().currentUser else {
+            // サインインしていない場合の処理をするなど
+            return
+        }
+        let db = Firestore.firestore()
+        let ref = db.collection("posts").document(user.uid)
+        
+   
+        let message: String = thanksTextView.text ?? "応援ありがとうございます"
+        
+        thanksMessage?(String(message))
+        self.dismiss(animated: true, completion: nil)
+       
+    }
+    
+    @objc func cancelAction(_ sender: UIBarButtonItem) {
+         self.dismiss(animated: true, completion: nil)
+        
+    }
 
 }

@@ -12,10 +12,6 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Functions'
 pod 'GoogleSignIn'
 pod 'FloatingPanel'
-pod 'Stripe'
-pod 'FirebaseUI'
-pod 'FirebaseUI/Auth'
-pod 'FirebaseUI/Facebook'
 pod 'Firebase/Analytics'
 
   # Pods for Ooze

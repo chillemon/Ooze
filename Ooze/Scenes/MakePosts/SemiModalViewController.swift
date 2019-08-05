@@ -18,9 +18,14 @@ protocol SemiModalControllerDelegate: AnyObject {
 final class SemiModalViewController: UIViewController {
 
     weak var delegate: SemiModalControllerDelegate?
-
-    var floatingPanelController: FloatingPanelController!
+    let db = Firestore.firestore()
     
+    var amountValue: Int = 0
+    var postTitle: String = "タイトル"
+    
+    var thanksMessageOfPost: String = "サンクス"
+    
+    var comments: String = "コメント"
     // e-sRGBA; red: 赤, green: 緑, blue: 青, a: 透明度
     let beforeSrgba = UIColor(displayP3Red: 0.4, green: 0.5, blue: 0.8, alpha:0.3)
     
@@ -85,10 +90,6 @@ final class SemiModalViewController: UIViewController {
     
     
 }
-
-
-
-
 extension SemiModalViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -104,7 +105,7 @@ extension SemiModalViewController: UITableViewDataSource {
       
         switch indexPath.row {
         case 0:
-            cell.textLabel?.text = "タイトル"
+            cell.textLabel?.text = "タイトルとサムネイル"
             cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
             cell.textLabel?.textAlignment = .center
             
@@ -129,6 +130,7 @@ extension SemiModalViewController: UITableViewDataSource {
             shareButton.backgroundColor = beforeSrgba
             shareButton.layer.cornerRadius = 10.0
             shareButton.setTitle("シェアする", for: .normal)
+            shareButton.addTarget(self, action: #selector(shareButtonPushed(_:)), for: .touchUpInside)
             cell.addSubview(shareButton)
             shareButton.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
@@ -139,38 +141,33 @@ extension SemiModalViewController: UITableViewDataSource {
 ////                shareButton.trailingAnchor.constraint(equalTo: cell.trailingAnchor),
 //                shareButton.bottomAnchor.constraint(equalTo: cell.bottomAnchor)
                 ])
-
-            
-      
-            
         default:
             cell.textLabel?.textAlignment = .center
         }
-
         
         return cell
     }
     
     @objc func shareButtonPushed(_ sender: UIButton) {
-    
-    guard let user = Auth.auth().currentUser else {
-    // サインインしていない場合の処理をするなど
-    return
-    }
         
-        let db = Firestore.firestore()
-        db.collection("contents").document(user.uid).setData([
-            "Title" : String(),
-            "TargetAmount": Int(),
-            "ThanksMessage": String(),
-            ]) { error in
-                if let error = error {
-                    //エラー処理
-                    return
-                }
-                //成功した時の処理
+        guard let user = Auth.auth().currentUser else {
+            // サインインしていない場合の処理をするなど
+            return
         }
-    }
+        
+        let uuid = NSUUID().uuidString
+        //Dictionary形式で値を持って、シェアボタンが押されたらFirestoreへ保存
+        let dictionaryOfPostData: [String: Any] = ["userID":user.uid,
+                                                   "title": postTitle,
+                                                   "amountOfMoney": amountValue,
+                                                   "thanksMessage": thanksMessageOfPost,
+                                                   "createdAt": FieldValue.serverTimestamp()
+                                                                                        ]
+        db.collection("posts").addDocument(data: dictionaryOfPostData)
+
+   
+    
+        }
     
 
 }
@@ -185,12 +182,24 @@ extension SemiModalViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0:
             let setTitleViewController = SetTitleViewController()
+            setTitleViewController.titleOfPost = { text in
+                print(text)
+                self.postTitle = text
+            }
             self.navigationController?.present(setTitleViewController, animated: true)
         case 1:
             let setAmountViewController = SetAmountViewController()
+            setAmountViewController.amountOfMoney = { value in
+                print(value)
+                self.amountValue = value
+            }
             self.navigationController?.present(setAmountViewController, animated: true)
         case 2:
             let thanksMessageViewController = ThanksMessageViewController()
+            thanksMessageViewController.thanksMessage = { thanks in
+                print(thanks)
+                self.thanksMessageOfPost = thanks
+            }
             self.navigationController?.present(thanksMessageViewController, animated: true)
         default: break
             

@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		234C780DE87CBFBF437B05E7 /* libPods-OozeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F76F5E6048AABFA83C1555 /* libPods-OozeTests.a */; };
-		5206689D22C28C4C002CCFB9 /* libFBSDKLoginKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5206689C22C28C4C002CCFB9 /* libFBSDKLoginKit.a */; };
 		5206689F22CC8013002CCFB9 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206689E22CC8013002CCFB9 /* AVPlayerView.swift */; };
+		521E5BD122E84E7800902F54 /* ThanksForDonatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5BD022E84E7700902F54 /* ThanksForDonatingViewController.swift */; };
+		521E5BD722E93E2E00902F54 /* DonationSemiModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5BD622E93E2E00902F54 /* DonationSemiModalCoordinator.swift */; };
+		521E5BD922E93FEF00902F54 /* ThanksForDonatingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E5BD822E93FEF00902F54 /* ThanksForDonatingCoordinator.swift */; };
 		52409564229BD4C9006E50C1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409563229BD4C9006E50C1 /* SignUpViewController.swift */; };
 		52409566229E78B1006E50C1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409565229E78B1006E50C1 /* SignInViewController.swift */; };
 		52409568229F07C0006E50C1 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52409567229F07C0006E50C1 /* PasswordResetViewController.swift */; };
@@ -20,6 +22,20 @@
 		52485A5522A34D9000C72373 /* SelfIntroductionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52485A5322A34D9000C72373 /* SelfIntroductionTableViewCell.xib */; };
 		52485A5822A6752F00C72373 /* ProfileImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52485A5622A6752F00C72373 /* ProfileImageTableViewCell.swift */; };
 		52485A5922A6752F00C72373 /* ProfileImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52485A5722A6752F00C72373 /* ProfileImageTableViewCell.xib */; };
+		526618EE22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526618EC22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.swift */; };
+		526618EF22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526618ED22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.xib */; };
+		526618F222EBD95B00EBFD05 /* CommentTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526618F022EBD95B00EBFD05 /* CommentTextViewTableViewCell.swift */; };
+		526618F322EBD95B00EBFD05 /* CommentTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526618F122EBD95B00EBFD05 /* CommentTextViewTableViewCell.xib */; };
+		526618F522EBF3DE00EBFD05 /* CommentSemiModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526618F422EBF3DE00EBFD05 /* CommentSemiModalViewController.swift */; };
+		526618F722ED327300EBFD05 /* CommentCustomFloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526618F622ED327300EBFD05 /* CommentCustomFloatingPanelLayout.swift */; };
+		526E09C522D8A0D900ABD141 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E09C422D8A0D900ABD141 /* DonationViewController.swift */; };
+		526E09C722D98C0A00ABD141 /* DonationSemiModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E09C622D98C0A00ABD141 /* DonationSemiModalViewController.swift */; };
+		526E09CA22D9950900ABD141 /* DonationSemiModalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E09C822D9950900ABD141 /* DonationSemiModalTableViewCell.swift */; };
+		526E09CB22D9950900ABD141 /* DonationSemiModalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526E09C922D9950900ABD141 /* DonationSemiModalTableViewCell.xib */; };
+		526E09CE22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E09CC22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.swift */; };
+		526E09CF22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526E09CD22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.xib */; };
+		526E09D622D9B5C700ABD141 /* DonationButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526E09D422D9B5C700ABD141 /* DonationButtonTableViewCell.swift */; };
+		526E09D722D9B5C700ABD141 /* DonationButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526E09D522D9B5C700ABD141 /* DonationButtonTableViewCell.xib */; };
 		5282359B22719AAB0014833E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282359A22719AAB0014833E /* AppDelegate.swift */; };
 		5282359D22719AAB0014833E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282359C22719AAB0014833E /* ViewController.swift */; };
 		528235A022719AAB0014833E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5282359E22719AAB0014833E /* Main.storyboard */; };
@@ -50,9 +66,7 @@
 		52C9FF322297B2D3003CAC35 /* ShareButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C9FF302297B2D3003CAC35 /* ShareButtonTableViewCell.xib */; };
 		52D528CE228025D000768E10 /* MakeContentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D528CD228025D000768E10 /* MakeContentsCoordinator.swift */; };
 		52D528D02280274100768E10 /* MakeContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D528CF2280274100768E10 /* MakeContentsViewController.swift */; };
-		52F8120A2278207E00FC537C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F812092278207E00FC537C /* MainTabBarController.swift */; };
 		52F90283228EA63A00E81280 /* SetTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F90282228EA63900E81280 /* SetTitleViewController.swift */; };
-		52F9028522900F6600E81280 /* ModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9028422900F6600E81280 /* ModalPresentationController.swift */; };
 		52F90287229013FB00E81280 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F90286229013FB00E81280 /* DismissAnimator.swift */; };
 		52F9028922901A9000E81280 /* OverCurrentTransitioningInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9028822901A9000E81280 /* OverCurrentTransitioningInteractor.swift */; };
 		52F9028B22913FF600E81280 /* OverCurrentTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9028A22913FF600E81280 /* OverCurrentTransitionable.swift */; };
@@ -72,6 +86,314 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		522F6DA622F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7620DDF240A5353A63056781C545B5B2;
+			remoteInfo = "BoringSSL-GRPC";
+		};
+		522F6DA822F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF158160C4A6D1F1088CD08EC3C02289;
+			remoteInfo = FirebaseAuth;
+		};
+		522F6DAA22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B462AEB0227B48A678EBD444DC9621F;
+			remoteInfo = FirebaseCore;
+		};
+		522F6DAC22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE797FC3673B3A1DC422C29287ACEA21;
+			remoteInfo = FirebaseFirestore;
+		};
+		522F6DAE22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68AD4A6728AD0A9370C5D813AB0A9F05;
+			remoteInfo = FirebaseFunctions;
+		};
+		522F6DB022F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15950F603F5E85B2677D36B570F77E77;
+			remoteInfo = FirebaseInstanceID;
+		};
+		522F6DB222F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5829BF7CAC0D89477DFF1342D2124CEE;
+			remoteInfo = FirebaseStorage;
+		};
+		522F6DB422F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 657C5D4347F5D741DC3C0636E9FD4DE7;
+			remoteInfo = FloatingPanel;
+		};
+		522F6DB622F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3DC78C48DEBE9C3AC49BC45276AB7E0;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		522F6DB822F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C780F8EC0CE4B1582CCBF014FE7A03B;
+			remoteInfo = GoogleUtilities;
+		};
+		522F6DBA22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DFA9669EB3AD1A489D4CE68C3FCFDF67;
+			remoteInfo = "gRPC-C++";
+		};
+		522F6DBC22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82071ACC0DEDEC976262EAEC24458DC2;
+			remoteInfo = "gRPC-C++-gRPCCertificates";
+		};
+		522F6DBE22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61A7DCAB021C93408DD7C8E7D7661300;
+			remoteInfo = "gRPC-Core";
+		};
+		522F6DC022F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 506A38881035AB7E58190A1E1A8024D4;
+			remoteInfo = GTMSessionFetcher;
+		};
+		522F6DC222F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58E71A7A08EB31518AEA669E98432CC5;
+			remoteInfo = "leveldb-library";
+		};
+		522F6DC422F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAF5889D85D373BADC57CAA965AB512D;
+			remoteInfo = nanopb;
+		};
+		522F6DC622F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E25EB92A485304A82054EC1CD9751147;
+			remoteInfo = "Pods-Ooze";
+		};
+		522F6DC822F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4E3E68460A5568CADB12E06BE95A8C4;
+			remoteInfo = "Pods-OozeTests";
+		};
+		522F6DCA22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5407B1B4D1AF6D75411795BD61F391B7;
+			remoteInfo = "Pods-OozeUITests";
+		};
+		522F6DCC22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 251CAB29132E69059E9B9F973E9AE184;
+			remoteInfo = Protobuf;
+		};
+		522F6DCE22F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25EDC449A440248543257C93E27EB2FF;
+			remoteInfo = Stripe;
+		};
+		522F6DD022F4456000AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE6472404DCB1A4693B3CA9C24B4BCB5;
+			remoteInfo = "Stripe-Stripe";
+		};
+		522F6DEB22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7620DDF240A5353A63056781C545B5B2;
+			remoteInfo = "BoringSSL-GRPC";
+		};
+		522F6DED22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AF158160C4A6D1F1088CD08EC3C02289;
+			remoteInfo = FirebaseAuth;
+		};
+		522F6DEF22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4B462AEB0227B48A678EBD444DC9621F;
+			remoteInfo = FirebaseCore;
+		};
+		522F6DF122F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE797FC3673B3A1DC422C29287ACEA21;
+			remoteInfo = FirebaseFirestore;
+		};
+		522F6DF322F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68AD4A6728AD0A9370C5D813AB0A9F05;
+			remoteInfo = FirebaseFunctions;
+		};
+		522F6DF522F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15950F603F5E85B2677D36B570F77E77;
+			remoteInfo = FirebaseInstanceID;
+		};
+		522F6DF722F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5829BF7CAC0D89477DFF1342D2124CEE;
+			remoteInfo = FirebaseStorage;
+		};
+		522F6DF922F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 657C5D4347F5D741DC3C0636E9FD4DE7;
+			remoteInfo = FloatingPanel;
+		};
+		522F6DFB22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A3DC78C48DEBE9C3AC49BC45276AB7E0;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		522F6DFD22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C780F8EC0CE4B1582CCBF014FE7A03B;
+			remoteInfo = GoogleUtilities;
+		};
+		522F6DFF22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DFA9669EB3AD1A489D4CE68C3FCFDF67;
+			remoteInfo = "gRPC-C++";
+		};
+		522F6E0122F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82071ACC0DEDEC976262EAEC24458DC2;
+			remoteInfo = "gRPC-C++-gRPCCertificates";
+		};
+		522F6E0322F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 61A7DCAB021C93408DD7C8E7D7661300;
+			remoteInfo = "gRPC-Core";
+		};
+		522F6E0522F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 506A38881035AB7E58190A1E1A8024D4;
+			remoteInfo = GTMSessionFetcher;
+		};
+		522F6E0722F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58E71A7A08EB31518AEA669E98432CC5;
+			remoteInfo = "leveldb-library";
+		};
+		522F6E0922F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAF5889D85D373BADC57CAA965AB512D;
+			remoteInfo = nanopb;
+		};
+		522F6E0B22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E25EB92A485304A82054EC1CD9751147;
+			remoteInfo = "Pods-Ooze";
+		};
+		522F6E0D22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4E3E68460A5568CADB12E06BE95A8C4;
+			remoteInfo = "Pods-OozeTests";
+		};
+		522F6E0F22F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5407B1B4D1AF6D75411795BD61F391B7;
+			remoteInfo = "Pods-OozeUITests";
+		};
+		522F6E1122F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 251CAB29132E69059E9B9F973E9AE184;
+			remoteInfo = Protobuf;
+		};
+		522F6E1322F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25EDC449A440248543257C93E27EB2FF;
+			remoteInfo = Stripe;
+		};
+		522F6E1522F4458C00AB04DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE6472404DCB1A4693B3CA9C24B4BCB5;
+			remoteInfo = "Stripe-Stripe";
+		};
 		528235AC22719AAF0014833E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5282358F22719AAB0014833E /* Project object */;
@@ -97,6 +419,11 @@
 		5206689A22C28C38002CCFB9 /* libFBSDKCoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFBSDKCoreKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206689C22C28C4C002CCFB9 /* libFBSDKLoginKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFBSDKLoginKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5206689E22CC8013002CCFB9 /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		521E5BD022E84E7700902F54 /* ThanksForDonatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksForDonatingViewController.swift; sourceTree = "<group>"; };
+		521E5BD622E93E2E00902F54 /* DonationSemiModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DonationSemiModalCoordinator.swift; path = /Users/nakaharayuuta/Desktop/Ooze/Ooze/Scenes/DonationSemiModalCoordinator.swift; sourceTree = "<absolute>"; };
+		521E5BD822E93FEF00902F54 /* ThanksForDonatingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksForDonatingCoordinator.swift; sourceTree = "<group>"; };
+		522F6D8D22F4456000AB04DB /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		522F6DD222F4458C00AB04DB /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = SOURCE_ROOT; };
 		52409563229BD4C9006E50C1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		52409565229E78B1006E50C1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		52409567229F07C0006E50C1 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +434,20 @@
 		52485A5322A34D9000C72373 /* SelfIntroductionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfIntroductionTableViewCell.xib; sourceTree = "<group>"; };
 		52485A5622A6752F00C72373 /* ProfileImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTableViewCell.swift; sourceTree = "<group>"; };
 		52485A5722A6752F00C72373 /* ProfileImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileImageTableViewCell.xib; sourceTree = "<group>"; };
+		526618EC22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailCommentTableViewCell.swift; sourceTree = "<group>"; };
+		526618ED22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDetailCommentTableViewCell.xib; sourceTree = "<group>"; };
+		526618F022EBD95B00EBFD05 /* CommentTextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextViewTableViewCell.swift; sourceTree = "<group>"; };
+		526618F122EBD95B00EBFD05 /* CommentTextViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTextViewTableViewCell.xib; sourceTree = "<group>"; };
+		526618F422EBF3DE00EBFD05 /* CommentSemiModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSemiModalViewController.swift; sourceTree = "<group>"; };
+		526618F622ED327300EBFD05 /* CommentCustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
+		526E09C422D8A0D900ABD141 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
+		526E09C622D98C0A00ABD141 /* DonationSemiModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationSemiModalViewController.swift; sourceTree = "<group>"; };
+		526E09C822D9950900ABD141 /* DonationSemiModalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationSemiModalTableViewCell.swift; sourceTree = "<group>"; };
+		526E09C922D9950900ABD141 /* DonationSemiModalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationSemiModalTableViewCell.xib; sourceTree = "<group>"; };
+		526E09CC22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodOfPaymentTableViewCell.swift; sourceTree = "<group>"; };
+		526E09CD22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodOfPaymentTableViewCell.xib; sourceTree = "<group>"; };
+		526E09D422D9B5C700ABD141 /* DonationButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationButtonTableViewCell.swift; sourceTree = "<group>"; };
+		526E09D522D9B5C700ABD141 /* DonationButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationButtonTableViewCell.xib; sourceTree = "<group>"; };
 		5282359722719AAB0014833E /* Ooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5282359A22719AAB0014833E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5282359C22719AAB0014833E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,15 +478,14 @@
 		528B1C2B22869CEB00C8FECD /* SetAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAmountViewController.swift; sourceTree = "<group>"; };
 		528B1C2D22894C4E00C8FECD /* SetAmountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAmountCoordinator.swift; sourceTree = "<group>"; };
 		528B1C2F228BFA0D00C8FECD /* ThanksMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksMessageViewController.swift; sourceTree = "<group>"; };
+		52AA438622E52C610053C86A /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C97DEC22BA1F5F00D22D3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52C9FF2D22967807003CAC35 /* CustomFloatingPanelLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFloatingPanelLayout.swift; sourceTree = "<group>"; };
 		52C9FF2F2297B2D3003CAC35 /* ShareButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonTableViewCell.swift; sourceTree = "<group>"; };
 		52C9FF302297B2D3003CAC35 /* ShareButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareButtonTableViewCell.xib; sourceTree = "<group>"; };
 		52D528CD228025D000768E10 /* MakeContentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeContentsCoordinator.swift; sourceTree = "<group>"; };
 		52D528CF2280274100768E10 /* MakeContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeContentsViewController.swift; sourceTree = "<group>"; };
-		52F812092278207E00FC537C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		52F90282228EA63900E81280 /* SetTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTitleViewController.swift; sourceTree = "<group>"; };
-		52F9028422900F6600E81280 /* ModalPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentationController.swift; sourceTree = "<group>"; };
 		52F90286229013FB00E81280 /* DismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		52F9028822901A9000E81280 /* OverCurrentTransitioningInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverCurrentTransitioningInteractor.swift; sourceTree = "<group>"; };
 		52F9028A22913FF600E81280 /* OverCurrentTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverCurrentTransitionable.swift; sourceTree = "<group>"; };
@@ -172,7 +512,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5206689D22C28C4C002CCFB9 /* libFBSDKLoginKit.a in Frameworks */,
 				75007A5D7B3EAAC0F0EFCEA0 /* libPods-Ooze.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +538,7 @@
 		2EEF39C2674CDD879643684E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52AA438622E52C610053C86A /* libStripe.a */,
 				5206689C22C28C4C002CCFB9 /* libFBSDKLoginKit.a */,
 				5206689A22C28C38002CCFB9 /* libFBSDKCoreKit.a */,
 				AB8C5D5053A1AAAA077044E5 /* libPods-Ooze.a */,
@@ -208,10 +548,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		522F6D8E22F4456000AB04DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				522F6DA722F4456000AB04DB /* libBoringSSL-GRPC.a */,
+				522F6DA922F4456000AB04DB /* libFirebaseAuth.a */,
+				522F6DAB22F4456000AB04DB /* libFirebaseCore.a */,
+				522F6DAD22F4456000AB04DB /* libFirebaseFirestore.a */,
+				522F6DAF22F4456000AB04DB /* libFirebaseFunctions.a */,
+				522F6DB122F4456000AB04DB /* libFirebaseInstanceID.a */,
+				522F6DB322F4456000AB04DB /* libFirebaseStorage.a */,
+				522F6DB522F4456000AB04DB /* libFloatingPanel.a */,
+				522F6DB722F4456000AB04DB /* libGoogleToolboxForMac.a */,
+				522F6DB922F4456000AB04DB /* libGoogleUtilities.a */,
+				522F6DBB22F4456000AB04DB /* libgRPC-C++.a */,
+				522F6DBD22F4456000AB04DB /* gRPCCertificates.bundle */,
+				522F6DBF22F4456000AB04DB /* libgRPC-Core.a */,
+				522F6DC122F4456000AB04DB /* libGTMSessionFetcher.a */,
+				522F6DC322F4456000AB04DB /* libleveldb-library.a */,
+				522F6DC522F4456000AB04DB /* libnanopb.a */,
+				522F6DC722F4456000AB04DB /* libPods-Ooze.a */,
+				522F6DC922F4456000AB04DB /* libPods-OozeTests.a */,
+				522F6DCB22F4456000AB04DB /* libPods-OozeUITests.a */,
+				522F6DCD22F4456000AB04DB /* libProtobuf.a */,
+				522F6DCF22F4456000AB04DB /* libStripe.a */,
+				522F6DD122F4456000AB04DB /* Stripe.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		522F6DD322F4458C00AB04DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				522F6DEC22F4458C00AB04DB /* libBoringSSL-GRPC.a */,
+				522F6DEE22F4458C00AB04DB /* libFirebaseAuth.a */,
+				522F6DF022F4458C00AB04DB /* libFirebaseCore.a */,
+				522F6DF222F4458C00AB04DB /* libFirebaseFirestore.a */,
+				522F6DF422F4458C00AB04DB /* libFirebaseFunctions.a */,
+				522F6DF622F4458C00AB04DB /* libFirebaseInstanceID.a */,
+				522F6DF822F4458C00AB04DB /* libFirebaseStorage.a */,
+				522F6DFA22F4458C00AB04DB /* libFloatingPanel.a */,
+				522F6DFC22F4458C00AB04DB /* libGoogleToolboxForMac.a */,
+				522F6DFE22F4458C00AB04DB /* libGoogleUtilities.a */,
+				522F6E0022F4458C00AB04DB /* libgRPC-C++.a */,
+				522F6E0222F4458C00AB04DB /* gRPCCertificates.bundle */,
+				522F6E0422F4458C00AB04DB /* libgRPC-Core.a */,
+				522F6E0622F4458C00AB04DB /* libGTMSessionFetcher.a */,
+				522F6E0822F4458C00AB04DB /* libleveldb-library.a */,
+				522F6E0A22F4458C00AB04DB /* libnanopb.a */,
+				522F6E0C22F4458C00AB04DB /* libPods-Ooze.a */,
+				522F6E0E22F4458C00AB04DB /* libPods-OozeTests.a */,
+				522F6E1022F4458C00AB04DB /* libPods-OozeUITests.a */,
+				522F6E1222F4458C00AB04DB /* libProtobuf.a */,
+				522F6E1422F4458C00AB04DB /* libStripe.a */,
+				522F6E1622F4458C00AB04DB /* Stripe.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5282358E22719AAB0014833E = {
 			isa = PBXGroup;
 			children = (
 				5282359922719AAB0014833E /* Ooze */,
+				522F6D8D22F4456000AB04DB /* Pods.xcodeproj */,
 				528235AE22719AB00014833E /* OozeTests */,
 				528235B922719AB00014833E /* OozeUITests */,
 				5282359822719AAB0014833E /* Products */,
@@ -239,6 +638,7 @@
 				528235E6227428ED0014833E /* Model */,
 				528235E72274292D0014833E /* Scenes */,
 				5282359A22719AAB0014833E /* AppDelegate.swift */,
+				522F6DD222F4458C00AB04DB /* Pods.xcodeproj */,
 				528235E82274297A0014833E /* Coordinator */,
 				5282359E22719AAB0014833E /* Main.storyboard */,
 				528235A122719AAF0014833E /* Assets.xcassets */,
@@ -283,8 +683,23 @@
 				528235E12272F7D20014833E /* MovieListTableViewCell.xib */,
 				528235D42272DC330014833E /* MovieListViewController.swift */,
 				528235DC2272EBCC0014833E /* MovieDetailViewController.swift */,
+				526E09C822D9950900ABD141 /* DonationSemiModalTableViewCell.swift */,
+				526E09C922D9950900ABD141 /* DonationSemiModalTableViewCell.xib */,
+				526E09C622D98C0A00ABD141 /* DonationSemiModalViewController.swift */,
 				52F9BBD822D7BC0F00C2DBB9 /* BlackScreenView.swift */,
 				52F9BBD622D6303A00C2DBB9 /* ProjectDetailViewController.swift */,
+				526618F622ED327300EBFD05 /* CommentCustomFloatingPanelLayout.swift */,
+				526618F422EBF3DE00EBFD05 /* CommentSemiModalViewController.swift */,
+				526618F022EBD95B00EBFD05 /* CommentTextViewTableViewCell.swift */,
+				526618F122EBD95B00EBFD05 /* CommentTextViewTableViewCell.xib */,
+				526618EC22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.swift */,
+				526618ED22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.xib */,
+				526E09D422D9B5C700ABD141 /* DonationButtonTableViewCell.swift */,
+				526E09D522D9B5C700ABD141 /* DonationButtonTableViewCell.xib */,
+				521E5BD022E84E7700902F54 /* ThanksForDonatingViewController.swift */,
+				526E09CC22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.swift */,
+				526E09CD22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.xib */,
+				526E09C422D8A0D900ABD141 /* DonationViewController.swift */,
 				5206689E22CC8013002CCFB9 /* AVPlayerView.swift */,
 				52F9BC6D22AF8BDF00308A10 /* Settlement.swift */,
 				52F9BC6F22AF8DD800308A10 /* StripeProvider.swift */,
@@ -293,17 +708,11 @@
 				52409565229E78B1006E50C1 /* SignInViewController.swift */,
 				52409567229F07C0006E50C1 /* PasswordResetViewController.swift */,
 				52FB1E8422C09D0100AB4C94 /* WelcomeViewController.swift */,
+				52D4F00822F68A7800C49AF2 /* MakePosts */,
 				52409569229F16D0006E50C1 /* SignOutViewController.swift */,
-				52F812092278207E00FC537C /* MainTabBarController.swift */,
-				52D528CF2280274100768E10 /* MakeContentsViewController.swift */,
-				528B1C2B22869CEB00C8FECD /* SetAmountViewController.swift */,
-				528B1C2F228BFA0D00C8FECD /* ThanksMessageViewController.swift */,
-				52F90282228EA63900E81280 /* SetTitleViewController.swift */,
-				52F9028422900F6600E81280 /* ModalPresentationController.swift */,
 				52F90286229013FB00E81280 /* DismissAnimator.swift */,
 				52F9028822901A9000E81280 /* OverCurrentTransitioningInteractor.swift */,
 				52F9028A22913FF600E81280 /* OverCurrentTransitionable.swift */,
-				52F9028C229156E000E81280 /* SemiModalViewController.swift */,
 				52C9FF2F2297B2D3003CAC35 /* ShareButtonTableViewCell.swift */,
 				52C9FF302297B2D3003CAC35 /* ShareButtonTableViewCell.xib */,
 				52C9FF2D22967807003CAC35 /* CustomFloatingPanelLayout.swift */,
@@ -333,8 +742,22 @@
 				52FD28B3227A98D200DFF479 /* MainTabBarCoordinator.swift */,
 				528B1C2D22894C4E00C8FECD /* SetAmountCoordinator.swift */,
 				52FD28B5227A9BF900DFF479 /* MakeMovieDetailCoordinator.swift */,
+				521E5BD622E93E2E00902F54 /* DonationSemiModalCoordinator.swift */,
+				521E5BD822E93FEF00902F54 /* ThanksForDonatingCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		52D4F00822F68A7800C49AF2 /* MakePosts */ = {
+			isa = PBXGroup;
+			children = (
+				52F9028C229156E000E81280 /* SemiModalViewController.swift */,
+				52D528CF2280274100768E10 /* MakeContentsViewController.swift */,
+				528B1C2B22869CEB00C8FECD /* SetAmountViewController.swift */,
+				528B1C2F228BFA0D00C8FECD /* ThanksMessageViewController.swift */,
+				52F90282228EA63900E81280 /* SetTitleViewController.swift */,
+			);
+			path = MakePosts;
 			sourceTree = "<group>";
 		};
 		C33CDC9F47C7DF8A775F82D2 /* Pods */ = {
@@ -362,7 +785,6 @@
 				5282359422719AAB0014833E /* Frameworks */,
 				5282359522719AAB0014833E /* Resources */,
 				7ECA29EB85CEDAC76A69D266 /* [CP] Copy Pods Resources */,
-				26522C5CFE635CBF54DFB703 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,6 +872,16 @@
 			mainGroup = 5282358E22719AAB0014833E;
 			productRefGroup = 5282359822719AAB0014833E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 522F6DD322F4458C00AB04DB /* Products */;
+					ProjectRef = 522F6DD222F4458C00AB04DB /* Pods.xcodeproj */;
+				},
+				{
+					ProductGroup = 522F6D8E22F4456000AB04DB /* Products */;
+					ProjectRef = 522F6D8D22F4456000AB04DB /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5282359622719AAB0014833E /* Ooze */,
@@ -458,6 +890,317 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		522F6DA722F4456000AB04DB /* libBoringSSL-GRPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libBoringSSL-GRPC.a";
+			remoteRef = 522F6DA622F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DA922F4456000AB04DB /* libFirebaseAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseAuth.a;
+			remoteRef = 522F6DA822F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DAB22F4456000AB04DB /* libFirebaseCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseCore.a;
+			remoteRef = 522F6DAA22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DAD22F4456000AB04DB /* libFirebaseFirestore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseFirestore.a;
+			remoteRef = 522F6DAC22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DAF22F4456000AB04DB /* libFirebaseFunctions.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseFunctions.a;
+			remoteRef = 522F6DAE22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DB122F4456000AB04DB /* libFirebaseInstanceID.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseInstanceID.a;
+			remoteRef = 522F6DB022F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DB322F4456000AB04DB /* libFirebaseStorage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseStorage.a;
+			remoteRef = 522F6DB222F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DB522F4456000AB04DB /* libFloatingPanel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFloatingPanel.a;
+			remoteRef = 522F6DB422F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DB722F4456000AB04DB /* libGoogleToolboxForMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGoogleToolboxForMac.a;
+			remoteRef = 522F6DB622F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DB922F4456000AB04DB /* libGoogleUtilities.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGoogleUtilities.a;
+			remoteRef = 522F6DB822F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DBB22F4456000AB04DB /* libgRPC-C++.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libgRPC-C++.a";
+			remoteRef = 522F6DBA22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DBD22F4456000AB04DB /* gRPCCertificates.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = gRPCCertificates.bundle;
+			remoteRef = 522F6DBC22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DBF22F4456000AB04DB /* libgRPC-Core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libgRPC-Core.a";
+			remoteRef = 522F6DBE22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DC122F4456000AB04DB /* libGTMSessionFetcher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTMSessionFetcher.a;
+			remoteRef = 522F6DC022F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DC322F4456000AB04DB /* libleveldb-library.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libleveldb-library.a";
+			remoteRef = 522F6DC222F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DC522F4456000AB04DB /* libnanopb.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnanopb.a;
+			remoteRef = 522F6DC422F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DC722F4456000AB04DB /* libPods-Ooze.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-Ooze.a";
+			remoteRef = 522F6DC622F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DC922F4456000AB04DB /* libPods-OozeTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-OozeTests.a";
+			remoteRef = 522F6DC822F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DCB22F4456000AB04DB /* libPods-OozeUITests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-OozeUITests.a";
+			remoteRef = 522F6DCA22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DCD22F4456000AB04DB /* libProtobuf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtobuf.a;
+			remoteRef = 522F6DCC22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DCF22F4456000AB04DB /* libStripe.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libStripe.a;
+			remoteRef = 522F6DCE22F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DD122F4456000AB04DB /* Stripe.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Stripe.bundle;
+			remoteRef = 522F6DD022F4456000AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DEC22F4458C00AB04DB /* libBoringSSL-GRPC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libBoringSSL-GRPC.a";
+			remoteRef = 522F6DEB22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DEE22F4458C00AB04DB /* libFirebaseAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseAuth.a;
+			remoteRef = 522F6DED22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DF022F4458C00AB04DB /* libFirebaseCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseCore.a;
+			remoteRef = 522F6DEF22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DF222F4458C00AB04DB /* libFirebaseFirestore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseFirestore.a;
+			remoteRef = 522F6DF122F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DF422F4458C00AB04DB /* libFirebaseFunctions.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseFunctions.a;
+			remoteRef = 522F6DF322F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DF622F4458C00AB04DB /* libFirebaseInstanceID.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseInstanceID.a;
+			remoteRef = 522F6DF522F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DF822F4458C00AB04DB /* libFirebaseStorage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirebaseStorage.a;
+			remoteRef = 522F6DF722F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DFA22F4458C00AB04DB /* libFloatingPanel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFloatingPanel.a;
+			remoteRef = 522F6DF922F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DFC22F4458C00AB04DB /* libGoogleToolboxForMac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGoogleToolboxForMac.a;
+			remoteRef = 522F6DFB22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6DFE22F4458C00AB04DB /* libGoogleUtilities.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGoogleUtilities.a;
+			remoteRef = 522F6DFD22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0022F4458C00AB04DB /* libgRPC-C++.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libgRPC-C++.a";
+			remoteRef = 522F6DFF22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0222F4458C00AB04DB /* gRPCCertificates.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = gRPCCertificates.bundle;
+			remoteRef = 522F6E0122F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0422F4458C00AB04DB /* libgRPC-Core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libgRPC-Core.a";
+			remoteRef = 522F6E0322F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0622F4458C00AB04DB /* libGTMSessionFetcher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTMSessionFetcher.a;
+			remoteRef = 522F6E0522F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0822F4458C00AB04DB /* libleveldb-library.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libleveldb-library.a";
+			remoteRef = 522F6E0722F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0A22F4458C00AB04DB /* libnanopb.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnanopb.a;
+			remoteRef = 522F6E0922F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0C22F4458C00AB04DB /* libPods-Ooze.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-Ooze.a";
+			remoteRef = 522F6E0B22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E0E22F4458C00AB04DB /* libPods-OozeTests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-OozeTests.a";
+			remoteRef = 522F6E0D22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E1022F4458C00AB04DB /* libPods-OozeUITests.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-OozeUITests.a";
+			remoteRef = 522F6E0F22F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E1222F4458C00AB04DB /* libProtobuf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtobuf.a;
+			remoteRef = 522F6E1122F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E1422F4458C00AB04DB /* libStripe.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libStripe.a;
+			remoteRef = 522F6E1322F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		522F6E1622F4458C00AB04DB /* Stripe.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Stripe.bundle;
+			remoteRef = 522F6E1522F4458C00AB04DB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5282359522719AAB0014833E /* Resources */ = {
@@ -468,11 +1211,16 @@
 				52C9FF322297B2D3003CAC35 /* ShareButtonTableViewCell.xib in Resources */,
 				52C97DED22BA1F5F00D22D3B /* GoogleService-Info.plist in Resources */,
 				528235A222719AAF0014833E /* Assets.xcassets in Resources */,
+				526618F322EBD95B00EBFD05 /* CommentTextViewTableViewCell.xib in Resources */,
 				52485A5522A34D9000C72373 /* SelfIntroductionTableViewCell.xib in Resources */,
+				526E09CB22D9950900ABD141 /* DonationSemiModalTableViewCell.xib in Resources */,
+				526618EF22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.xib in Resources */,
+				526E09CF22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.xib in Resources */,
 				52485A5922A6752F00C72373 /* ProfileImageTableViewCell.xib in Resources */,
 				52485A5122A29CF500C72373 /* TextFieldTableViewCell.xib in Resources */,
 				528235E32272F7D20014833E /* MovieListTableViewCell.xib in Resources */,
 				528235A022719AAB0014833E /* Main.storyboard in Resources */,
+				526E09D722D9B5C700ABD141 /* DonationButtonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,30 +1263,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		26522C5CFE635CBF54DFB703 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Ooze/Pods-Ooze-frameworks.sh",
-				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ooze/Pods-Ooze-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5465DE212D8005DA3EC57973 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,34 +1294,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ooze/Pods-Ooze-resources.sh",
-				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Stripe.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,7 +1340,9 @@
 			files = (
 				5206689F22CC8013002CCFB9 /* AVPlayerView.swift in Sources */,
 				52D528D02280274100768E10 /* MakeContentsViewController.swift in Sources */,
+				526E09CE22D9B0B200ABD141 /* MethodOfPaymentTableViewCell.swift in Sources */,
 				528235F2227443770014833E /* EditProfileViewController.swift in Sources */,
+				526618F722ED327300EBFD05 /* CommentCustomFloatingPanelLayout.swift in Sources */,
 				528235D72272DD000014833E /* MovieModel.swift in Sources */,
 				52485A5422A34D9000C72373 /* SelfIntroductionTableViewCell.swift in Sources */,
 				528235EE2274421E0014833E /* ProfileModel.swift in Sources */,
@@ -652,29 +1358,37 @@
 				528235EC227439E30014833E /* ProfileViewController.swift in Sources */,
 				52409564229BD4C9006E50C1 /* SignUpViewController.swift in Sources */,
 				52409566229E78B1006E50C1 /* SignInViewController.swift in Sources */,
+				526E09C722D98C0A00ABD141 /* DonationSemiModalViewController.swift in Sources */,
+				526618F522EBF3DE00EBFD05 /* CommentSemiModalViewController.swift in Sources */,
+				526E09C522D8A0D900ABD141 /* DonationViewController.swift in Sources */,
 				5282359D22719AAB0014833E /* ViewController.swift in Sources */,
 				52C9FF2E22967807003CAC35 /* CustomFloatingPanelLayout.swift in Sources */,
 				52F9BBD922D7BC0F00C2DBB9 /* BlackScreenView.swift in Sources */,
 				52F9028922901A9000E81280 /* OverCurrentTransitioningInteractor.swift in Sources */,
 				52485A5022A29CF500C72373 /* TextFieldTableViewCell.swift in Sources */,
+				526E09CA22D9950900ABD141 /* DonationSemiModalTableViewCell.swift in Sources */,
 				52409568229F07C0006E50C1 /* PasswordResetViewController.swift in Sources */,
+				521E5BD722E93E2E00902F54 /* DonationSemiModalCoordinator.swift in Sources */,
 				52F9028B22913FF600E81280 /* OverCurrentTransitionable.swift in Sources */,
+				526618EE22EBCDE800EBFD05 /* ProjectDetailCommentTableViewCell.swift in Sources */,
 				52F90287229013FB00E81280 /* DismissAnimator.swift in Sources */,
-				52F9028522900F6600E81280 /* ModalPresentationController.swift in Sources */,
 				528235CF227213780014833E /* AppCoordinator.swift in Sources */,
 				52F9BBD522D6301700C2DBB9 /* ProjectDetailCoordinator.swift in Sources */,
 				528235D52272DC330014833E /* MovieListViewController.swift in Sources */,
 				52FB1E8522C09D0200AB4C94 /* WelcomeViewController.swift in Sources */,
 				52FD28B4227A98D200DFF479 /* MainTabBarCoordinator.swift in Sources */,
 				52F9028D229156E000E81280 /* SemiModalViewController.swift in Sources */,
+				526618F222EBD95B00EBFD05 /* CommentTextViewTableViewCell.swift in Sources */,
 				528235DD2272EBCC0014833E /* MovieDetailViewController.swift in Sources */,
-				52F8120A2278207E00FC537C /* MainTabBarController.swift in Sources */,
+				521E5BD122E84E7800902F54 /* ThanksForDonatingViewController.swift in Sources */,
 				52FB1E8722C0AEF000AB4C94 /* WelcomeCoordinator.swift in Sources */,
 				528235E52272FAB70014833E /* UITableView+extensions.swift in Sources */,
+				526E09D622D9B5C700ABD141 /* DonationButtonTableViewCell.swift in Sources */,
 				528235E22272F7D20014833E /* MovieListTableViewCell.swift in Sources */,
 				52FB1E8922C0C85000AB4C94 /* SignInCoordinator.swift in Sources */,
 				5240956A229F16D0006E50C1 /* SignOutViewController.swift in Sources */,
 				52D528CE228025D000768E10 /* MakeContentsCoordinator.swift in Sources */,
+				521E5BD922E93FEF00902F54 /* ThanksForDonatingCoordinator.swift in Sources */,
 				528235DB2272EB250014833E /* MovieDetailCoordinator.swift in Sources */,
 				52C9FF312297B2D3003CAC35 /* ShareButtonTableViewCell.swift in Sources */,
 				528B1C30228BFA0E00C8FECD /* ThanksMessageViewController.swift in Sources */,
@@ -867,7 +1581,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -888,7 +1601,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

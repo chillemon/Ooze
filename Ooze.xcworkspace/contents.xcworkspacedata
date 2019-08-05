@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/nakaharayuuta/Desktop/Ooze/Ooze/Scenes/DonationSemiModalCoordinator.swift">
+   </FileRef>
+   <FileRef
+      location = "group:DonationButtonTableViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:DonationButtonTableViewCell.xib">
+   </FileRef>
+   <FileRef
       location = "group:Ooze.xcodeproj">
    </FileRef>
    <FileRef

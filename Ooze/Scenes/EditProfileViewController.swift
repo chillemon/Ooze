@@ -54,7 +54,7 @@ final class EditProfileViewController: UIViewController, UIImagePickerController
         let navItem : UINavigationItem = UINavigationItem(title: "プロフィール編集")
         
         //ナビゲーションバー右のボタンを設定
-        navItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(registerAction(_:)))
+        navItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneAction(_:)))
         
         //ナビゲーションバー左のボタンを設定
         navItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelAction(_:)))
@@ -76,43 +76,13 @@ final class EditProfileViewController: UIViewController, UIImagePickerController
         
 
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
   
-    
     @objc func cancelAction(_ sender: UINavigationItem) {
         self.dismiss(animated: true, completion: nil)
     }
-    @objc func registerAction(_ sender: UINavigationItem) {
-        guard let user = Auth.auth().currentUser else {
-            // サインインしていない場合の処理をするなど
-            return
-        }
-        
-        let userName: String = nameTextField.text ?? "No name"
-        let selfIntroduction: String = selfIntroductionTextField.text ?? "It is my friend who reflects myself, not the mirror."
-        let highSchoolName: String = highSchoolNameTextField.text ?? "母校"
-        
-        
-        
-        let db = Firestore.firestore()
-        
-        db.collection("users").document(user.uid).setData([
-            "userName": userName ,
-            "selfIntroduction": selfIntroduction ,
-            "highSchoolName": highSchoolName
-            
-        ]) { error in
-            if let error = error {
-                // エラー処理
-                return
-            }
-            // 成功したときの処理
-        }
-    }
+    
+    
+    
 }
 
 extension EditProfileViewController: UITableViewDataSource {
@@ -124,11 +94,6 @@ extension EditProfileViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
-    
-    
-
-    
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -147,8 +112,7 @@ extension EditProfileViewController: UITableViewDataSource {
             let nameCell = tableView.dequeueReusableCell(withIdentifier: "textFieldCell", for:indexPath as IndexPath) as! TextFieldTableViewCell
             nameCell.textLabel?.text = "ニックネーム"
             nameCell.textLabel?.font = UIFont.systemFont(ofSize: 16)
-            //現状のニックネームを取ってくる
-            nameCell.newNameTextField.text = ""
+            
             nameCell.newNameTextField.borderStyle = .none
             return nameCell
             
@@ -157,8 +121,7 @@ extension EditProfileViewController: UITableViewDataSource {
             selfIntroductionCell.textLabel?.text = "自己紹介"
             selfIntroductionCell.textLabel?.font = UIFont.systemFont(ofSize: 16)
         
-            //現状の自己紹介を取ってくる
-            selfIntroductionCell.selfIntroductionTextView.text = ""
+            
             return selfIntroductionCell
         case 3:
             let highSchoolNameCell = tableView.dequeueReusableCell(withIdentifier: "textFieldCell", for:indexPath as IndexPath) as! TextFieldTableViewCell
@@ -166,7 +129,7 @@ extension EditProfileViewController: UITableViewDataSource {
             highSchoolNameCell.textLabel?.text = "高校名"
             highSchoolNameCell.textLabel?.font = UIFont.systemFont(ofSize: 16)
             //現状のニックネームを取ってくる
-            highSchoolNameCell.newNameTextField.text = ""
+           
             highSchoolNameCell.newNameTextField.borderStyle = .none
             return highSchoolNameCell
             
@@ -189,6 +152,25 @@ extension EditProfileViewController: UITableViewDataSource {
         imagePickerController.mediaTypes = ["public.image"] // 画像だけを取れるように
         present(imagePickerController, animated: true, completion: nil)
     }
+    
+    @objc func doneAction(_ sender: UINavigationItem) {
+        guard let user = Auth.auth().currentUser else {
+            // サインインしていない場合の処理をするなど
+            return
+        }
+        let ref = db.collection("users").document(user.uid)
+//        let selfIntroduction = selfIntroductionTextField.text ?? "I am me！"
+        let userName = nameTextField.text ?? "I am me"
+        let highSchoolName = highSchoolNameTextField.text ?? "highSchool"
+        
+        ref.setData([
+            
+//            "introduction": selfIntroduction,
+            "userName": userName,
+            "highSchool": highSchoolName
+            
+            ])
+    }
 
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -208,29 +190,6 @@ extension EditProfileViewController: UITableViewDataSource {
     }
     
     
-    
-
-    
-//    @objc func shareButtonPushed(_ sender: UIButton) {
-//
-//        guard let user = Auth.auth().currentUser else {
-//            // サインインしていない場合の処理をするなど
-//            return
-//        }
-//
-//        let db = Firestore.firestore()
-//        db.collection("contents").document(user.uid).setData([
-//            "Title" : String(),
-//            "TargetAmount": Int(),
-//            "ThanksMessage": String(),
-//        ]) { error in
-//            if let error = error {
-//                //エラー処理
-//                return
-//            }
-//            //成功した時の処理
-//        }
-//    }
     
     
 }

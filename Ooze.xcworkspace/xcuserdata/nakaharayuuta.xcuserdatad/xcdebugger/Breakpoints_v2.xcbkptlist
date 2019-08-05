@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ooze/Scenes/EditProfileViewController.swift"
-            timestampString = "583930190.853117"
+            timestampString = "586338184.6756459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -178,17 +178,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Ooze/Scenes/MovieDetailViewController.swift"
-            timestampString = "584564524.502467"
+            filePath = "Ooze/Coordinator/ThanksForDonatingCoordinator.swift"
+            timestampString = "585817258.811999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "goToHome()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
